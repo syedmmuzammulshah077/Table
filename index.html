@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      button {
+        
+        background-color: #806ae4;
+        border: none;
+        color: white;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+      p{
+        text-align: center;
+        color: #27186b;
+      }
+      body{
+      background-image: linear-gradient(45deg, #FFFFFF, rgb(255, 122, 89));
+background-repeat :no-repeat ;
+margin-top: 300px;
+     } 
+    .ab{
+       text-align :center;
+       border:6px #27186b;
+       
+        
+    }
+    input{
+    text-align: center;
+display: block;
+  width: 420px;
+   Font-size : 25px ;
+    margin:5px auto;
+    Border-radius :20px;
+    }
+    </style>
+    <script>
+      function addNumbers() {
+        var number;
+        var result = "";
+
+        number = Number(document.getElementById("number").value);
+        B= Number(document.getElementById("number1").value);
+
+        for(var i = 1; i<= B; i++){
+          result = result + "<p><u>"+number + " x " + i + " = " + number * i+"</u></p>";
+        }
+
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+              <div class="ab">    
+    <h1>Enter the Number</h1> <br>
+     <input id="number" /><br><br>
+    
+    <h1>Enter the Number</h1> <br> 
+    <input value="10" id="number1" /><br><br>
+    
+    <button onclick="addNumbers()">Print Multiplication Table</button><br>
+   <h1>Result is</h1><br>
+   <h1><div id="result"></h1>
+              </div>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>
+
+
+
+
+
